@@ -43,7 +43,7 @@ onMounted(() => {
       url0 = params.get("url");
       tvlistUrl = params.get("s");
     }
-    tvlistUrl = tvlistUrl || localStorage.getItem("tvlistUrl") || "https://sonydaimenew.akamaized.net/hls/live/2022320/DAI16ME_CPM3/master_mdh.m3u8?hdnea=st=1705387778~exp=1705388078~acl=*~id=5aa64e90-5f98-422c-8974-284acbc95e3a~hmac=e23ae6f91a56f062aa46f7ab1e897564c01a29343b4a4c37406b01651948d832&originpath=/linear/hls/pb/event/wN0bVs8wS9-yv6vL9G-tGQ/stream/7c9c1229-91f0-4c4b-86ae-3f8d923beea7:TPE/master.m3u8";
+    tvlistUrl = tvlistUrl || localStorage.getItem("tvlistUrl") || "http://rtv252.co.uk:8080/play/live.php?mac=00:1A:79:18:0d:77&stream=1001829&extension=ts";
     let suffixName = tvlistUrl && suffix(tvlistUrl);
     if (tvlistUrl) {
       if (suffixName == "m3u8") {
